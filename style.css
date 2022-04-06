@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+* {
+  box-sizing: border-box;
+}
+.font-righteous {
+  font-family: 'Righteous', cursive;
+}
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+.selecionado1, .selecionado2, .selecionado3 {
+  border: 3px solid #32B72F;
+}
+ion-icon{
+  color: green;
+  width: 19px;
+  height: 19px;
+  display: none;
+}
+.selecionado1 ion-icon, .selecionado2 ion-icon, .selecionado3 ion-icon {
+  display: inline;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+}
+.container {
+  max-width: 414px;
+  width: 100%;
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container > div {
+  width: 100%;
+  padding-left: 19px;
+}
+.fixar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+/*-------------- Tela de confirmação ------------*/
+  .telaConfirmacao{
+    z-index: 2;
+    width: 420px;
+    height: 1028px;
+    background-color: rgba(252, 252, 252, 0.816);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  .confirmar{
+    width: 377px;
+    height: 353px;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #50D074;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .confirmar div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+  }
+  
+  span{
+    width: 333px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+  }
+  h4{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+  }
+  .nomePrato, .nomeBebida, .nomeSobremesa, .precoPrato, .precoBebida, .precoSobremesa{
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+  }
+/*-------------- Tela de confirmação ------------*/
+
+/*-------------- topo ------------*/
+.topo {
+  width: 414px;
+  height: 92px;
+  background-color: #cf2b2b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h1 {
+  font-size: 44px;
+  color: #ffffff;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.topo > div {
+  margin: 8px 21px;
+}
+/*-------------- topo ------------*/
+
+/*-------------- Prato ------------*/
+h3 {
+  font-size: 26px;
+  color: #333333;
+}
+.ajustar-cardapio {
+  max-width: 414px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+}
+
+.ajustar-cardapio > div {
+  background-color: #ffffff;
+  margin-right: 16px;
+  max-width: 172px;
+  width: 100%;
+  height: 216px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+.ajustar-cardapio > div > div {
+  width: 148px;
+  display: flex;
+  flex-direction: column;
+}
+p, h6, h5 {
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  width: 144px;
+  height: 87px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.nome-alimento {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+}
+.descricao {
+  font-size: 15px;
+  font-weight: 300;
+  color: #a6a6a6;
+}
+.preco {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+.ajustar-cardapio div > div > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*-------------- Prato ------------*/
+
+/*----------- Bebida ----------*/
+.bebida {
+  width: 172px;
+  height: 202px;
+}
+/*----------- Bebida ----------*/
+
+/*----------- Sobremesa ----------*/
+.sobremesa {
+  width: 172px;
+  height: 197px;
+}
+/*----------- Sobremesa ----------*/
+
+/*--------Finalizar---------*/
+.finalizar {
+  max-width: 414px;
+  width: 100%;
+  height: 92px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixar-finalizar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.espera {
+  max-width: 364px;
+  width: 100%;
+  height: 61px;
+  background-color: #cbcbcb;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 75px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+button{
+  background-color: #32B72F;
+  color:#FFFFFF;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  width: 364px;
+  height: 61px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.cancel{
+  background-color: #50D074;
+}
+.escondido{
+  display: none;
+}
+/*--------Finalizar---------*/

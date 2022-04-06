@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrivenEats - Vinicius Pacheco T6</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!------------Tela de confirmação------------->
+    <div class="telaConfirmacao escondido">
+      <div class="confirmar">
+        <span><h4>Confirme seu pedido</h4></span>
+        <div>
+          <p class="nomePrato">Frango Yin Yang</p>
+          <p class="precoPrato">14,90</p>
+        </div>
+        <div>
+          <p class="nomeBebida">Coquinha gelada</p>
+          <p class="precoBebida">4,90</p>
+        </div>
+        <div>
+          <p class="nomeSobremesa">Pudim</p>
+          <p class="precoSobremesa">7,90</p>
+        </div>
+        <div>
+          <h4>TOTAL</h4>
+          <h4 class="total">R$ 27,70</h4>
+        </div>
+        <div>
+          <button onclick="enviar()">Tudo certo, pode pedir!</button>
+        </div>
+        <span
+          ><button class="cancel" onclick="escondido()">Cancelar</button></span
+        >
+      </div>
+    </div>
+    <!------------Tela de confirmação------------->
+
+    <!------------Topo------------->
+    <div class="fixar">
+      <div class="topo">
+        <div>
+          <h1 class="font-righteous">DrivenEats</h1>
+          <h2 class="font-roboto">Sua comida em 6 minutos</h2>
+        </div>
+      </div>
+    </div>
+    <!------------Topo------------->
+    <div class="container">
+      <!------------Prato------------->
+      <div>
+        <div>
+          <h3 class="font-righteous">Primeiro, seu prato</h3>
+        </div>
+        <div class="ajustar-cardapio">
+          <div onclick="selecionarPrato(this)">
+            <div>
+              <img src="/images/frango_yin_yang 1.png" />
+              <h6 class="nome-alimento">Frango Yin Yang</h6>
+              <p class="descricao">Um pouco de batata, um pouco de salada</p>
+              <div>
+                <h5 class="preco">R$ 14,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div onclick="selecionarPrato(this)">
+            <div>
+              <img src="/images/pizza.jpeg" />
+              <h6 class="nome-alimento">Pizza</h6>
+              <p class="descricao">Pizza grande sabor portuguesa</p>
+              <div>
+                <h5 class="preco">R$ 35,50</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div onclick="selecionarPrato(this)">
+            <div>
+              <img src="/images/lasanha.jpeg" />
+              <h6 class="nome-alimento">Lasanha</h6>
+              <p class="descricao">Mussarela, presunto e carne moida</p>
+              <div>
+                <h5 class="preco">R$ 9,99</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div onclick="selecionarPrato(this)">
+            <div>
+              <img src="/images/ratatouille.jpeg" />
+              <h6 class="nome-alimento">Ratatouille</h6>
+              <p class="descricao">
+                Legumes cozidos: abobrinha, berinjela e tomate.
+              </p>
+              <div>
+                <h5 class="preco">R$ 11,99</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div onclick="selecionarPrato(this)">
+            <div>
+              <img src="/images/sushi.jpg" />
+              <h6 class="nome-alimento">Sushi</h6>
+              <p class="descricao">Arroz, salmão e shoyu.</p>
+              <div>
+                <h5 class="preco">R$ 37,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------Prato------------->
+
+      <!------------Bebida------------->
+      <div>
+        <div>
+          <h3 class="font-righteous">Agora, sua bebida</h3>
+        </div>
+        <div class="ajustar-cardapio procura">
+          <div class="bebida" onclick="selecionarBebida(this)">
+            <div>
+              <img src="/images/coquinha_gelada 1.png" />
+              <h6 class="nome-alimento">Coquinha gelada</h6>
+              <p class="descricao">Lata 350ml</p>
+              <div>
+                <h5 class="preco">R$ 4,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="bebida" onclick="selecionarBebida(this)">
+            <div>
+              <img src="/images/fanta uva.png" />
+              <h6 class="nome-alimento">Fanta uva</h6>
+              <p class="descricao">Lata 350ml</p>
+              <div>
+                <h5 class="preco">R$ 5,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="bebida" onclick="selecionarBebida(this)">
+            <div>
+              <img src="/images/guarana.jpeg" />
+              <h6 class="nome-alimento">Guaraná</h6>
+              <p class="descricao">Lata 350ml</p>
+              <div>
+                <h5 class="preco">R$ 5,00</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="bebida" onclick="selecionarBebida(this)">
+            <div>
+              <img src="/images/suco de laranja.jpg" />
+              <h6 class="nome-alimento">Suco de laranja, 500mL</h6>
+              <p class="descricao">Natural, 100% laranja</p>
+              <div>
+                <h5 class="preco">R$ 7,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------Bebida------------->
+
+      <!------------Sobremesa------------->
+      <div>
+        <div>
+          <h3 class="font-righteous">Por fim, sua sobremesa</h3>
+        </div>
+        <div class="ajustar-cardapio">
+          <div class="sobremesa" onclick="selecionarSobremesa(this)">
+            <div>
+              <img src="/images/pudim 1.png" />
+              <h6 class="nome-alimento">Pudim</h6>
+              <p class="descricao">Apenas pudim</p>
+              <div>
+                <h5 class="preco">R$ 7,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="sobremesa" onclick="selecionarSobremesa(this)">
+            <div>
+              <img src="/images/sorvete.jpeg" />
+              <h6 class="nome-alimento">Sorvete</h6>
+              <p class="descricao">2L, sabor napolitano</p>
+              <div>
+                <h5 class="preco">R$ 14,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="sobremesa" onclick="selecionarSobremesa(this)">
+            <div>
+              <img src="/images/pave.jpeg" />
+              <h6 class="nome-alimento">Pavê de chocolate</h6>
+              <p class="descricao">Biscoite de maisena, cremede leite e ovos</p>
+              <div>
+                <h5 class="preco">R$ 9,99</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="sobremesa" onclick="selecionarSobremesa(this)">
+            <div>
+              <img src="/images/torta.jpeg" />
+              <h6 class="nome-alimento">Torta</h6>
+              <p class="descricao">Torda de limão</p>
+              <div>
+                <h5 class="preco">R$ 37,60</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------Sobremesa------------->
+    </div>
+    <!------------Finalizar------------->
+    <div class="fixar-finalizar">
+      <div class="finalizar">
+        <div class="espera">Selecione os 3 itens para fechar o pedido</div>
+        <div class="enviar escondido">
+          <button onclick="confirmarPedido()">Fechar pedido</button>
+        </div>
+      </div>
+    </div>
+    <!------------Finalizar------------->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
